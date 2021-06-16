@@ -1,0 +1,8 @@
+*.pyc
+venv/*
+results/*
+wahlbot/__pycache__/*
+tests/__pycache__/*
+.mypy_cache/*
+
+.DS_Store

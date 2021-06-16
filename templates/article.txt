@@ -1,0 +1,33 @@
+${title}
+
+${teaser} ${leadtext}
+
+
+${subtitle1}
+
+${num1_directShare} ${extra_info}
+${candidates_extra_info}
+
+${num2_directShare} ${candidate2_extra_info}
+
+
+Zweitstimmen, Gewinner und Verlierer
+
+${num1_listShare} ${num2_listShare}
+
+${list_overview}
+
+${biggest_differences}
+
+
+Vergleich zur Landesebene
+
+${state_comparison}
+${res_state}
+
+
+Wahlbeteiligung 
+
+${turnout_text}
+
+${constituency_info}

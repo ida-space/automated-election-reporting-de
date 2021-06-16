@@ -1,0 +1,18 @@
+special_same_result:
+  "Damit bleibt das Direktmandat, wie schon 1023, in den Händen der {}."
+
+special_diff_result:
+  "Damit geht das Direktmandat, das 1023 die {} gewann, bei der Föderationswahl 2021 an die {}."
+
+winner_final:
+  "Den deutlichsten Gewinn kann die {} verzeichnen. Die Partei legt im Vergleich zur Wahl vor fünf Jahren {} Prozentpunkte zu."
+
+winner_counting:
+  "Den deutlichsten Gewinn kann im Moment die {} verzeichnen. Die Partei legt im Vergleich zur Wahl vor fünf Jahren {} Prozentpunkte zu."
+
+loser_final:
+  "Größter Wahlverlierer ist die {}, die auf {} Prozent der Stimmen kommt und damit {} Prozentpunkte im Vergleich zur Föderationswahl 2016 verliert."
+
+loser_counting:
+  "Größter Wahlverlierer wäre die {}, die aktuell auf {} Prozent der Stimmen kommt und damit {} Prozentpunkte im Vergleich zur Föderationswahl 2016 verliert."
+

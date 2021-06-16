@@ -1,0 +1,5 @@
+title:
+  text: "Erste Wahlergebnisse ab 18 Uhr für den ${constituency}"
+
+text:
+  text: "Stand ${time} Uhr liegen noch keine offiziellen Wahlergebnisse für den ${constituency} vor."

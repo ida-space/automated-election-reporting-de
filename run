@@ -1,0 +1,44 @@
+#!/bin/bash
+set -e
+
+P3=
+if [[ -f $(which python3.9) ]]; then
+    P3=3.9
+else
+    echo "ERROR: Could not find python 3.9 in path. Please install python3.9."
+    exit 1
+fi
+
+CMD=$1
+shift
+
+if [ $CMD = "install" ]; then
+    python${P3} -m venv venv
+    . ./venv/bin/activate
+    pip install --upgrade pip || echo "Please first install python${P3}-pip"
+    pip install --upgrade setuptools
+    pip install --upgrade -r requirements.txt
+    python -m nltk.downloader punkt 
+    rm -rf ./results/
+    exit 0
+fi
+
+if [ ! -f "venv/bin/activate" ]; then
+    ./run install
+fi
+
+. ./venv/bin/activate || exit 1
+
+if [ $CMD = "run" ]; then
+    python script.py "$@"
+elif [ $CMD = "test" ]; then
+    ./run lint && ./run mypy && nosetests ./tests/
+elif [ $CMD = "lint" ]; then
+    flake8 --max-line-length=120 *.py wahlbot/*.py tests/*.py
+elif [ $CMD = "mypy" ]; then
+    mypy --ignore-missing-imports *.py wahlbot/*.py
+elif [ $CMD = "format" ]; then
+    autopep8 -i --max-line-length 120 *.py wahlbot/*.py tests/*.py "$@"
+else
+    "$CMD" "$@"
+fi

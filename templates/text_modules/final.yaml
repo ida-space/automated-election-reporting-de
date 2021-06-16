@@ -1,0 +1,77 @@
+title:
+  text: "${num1_candidate} (${direct_num1_party}) gewinnt den ${constituency}"
+
+teaser:
+  text: "Der Direktkandidat der ${direct_num1_party}, ${num1_candidate}, erhält im ${constituency} die meisten Stimmen der Wählerinnen und Wähler. ${num1_party_diff}"
+  process:
+    gender: num1_gender
+    pluralize_party:
+
+leadtext:
+  text: "${listdirect_diff_num1}ei den Zweitstimmen ist die ${list_num1_party} stärkste Kraft.
+        Dahinter folgen ${list_num2_party} und ${list_num3_party}. Die Wahlbeteiligung liegt bei ${turnout} Prozent."
+  process:
+    pluralize_verb_dependent_on_party:
+
+num1_directShare:
+  text: "Der Direktkandidat der ${direct_num1_party}, ${num1_candidate}, zieht für den ${constituency} in den neuen Landtag ein.
+        Nach dem vorläufigen Endergebnis bei der Föderationswahl 2021 erhält er mit ${direct_num1_percent} Prozent die meisten Erstimmen."
+  process:
+    gender: num1_gender
+    pluralize_party:
+
+extra_info:
+  text: "${extra_info}"
+
+candidates_extra_info:
+  text: "${candidates_extra_info}"
+
+candidate2_extra_info:
+  text: "${candidate2_extra_info}"
+
+num2_directShare:
+  text: "${num2_candidate}, Bewerber der ${direct_num2_party}, kommt mit ${direct_num2_percent} Prozent auf Platz zwei."
+  process:
+    gender: num2_gender
+    pluralize_party: 
+
+num1_listShare:
+  text: "Bei den Zweitstimmen liegt die ${list_num1_party} mit ${list_num1_percent} Prozent vorn. ${list_num1_comparison}${num1_biggest_diff}"
+  process:
+    pluralize_verb_dependent_on_party:
+    singularize_noun_after_1:
+
+num2_listShare:
+  text: "An zweiter Stelle kommt die ${list_num2_party}. Für die Partei stimmen ${list_num2_percent} Prozent der Wählerinnen und Wähler.
+         ${list_num2_comparison}${num2_biggest_diff}"
+  process:
+    pluralize_verb_dependent_on_party:
+    singularize_noun_after_1:
+
+list_overview: 
+  text: "Dahinter folgen ${list_overview}."
+
+turnout_text:
+  text: "Die Wahlbeteiligung im ${constituency} liegt mit ${turnout} Prozent ${turnout_diff_state} Prozentpunkte ${turnout_trend_state} dem Landesdurchschnitt
+        sowie ${turnout_diff} Prozentpunkte ${turnout_trend} der Wahlbeteiligung von 2016.
+        ${no_voter} Menschen waren zur Wahl aufgerufen. ${invalid_votes} Prozent der Stimmen sind ungültig."
+  process:
+    singularize_noun_after_1:
+    capitalize_first_word:
+
+state_comparison:
+  text: "Die Menschen im ${constituency} stimmen ${state_distinction} die Wählerinnen und Wähler in Sachsen-Anhalt."
+
+res_state:
+  text: "Landesweit erhält die ${state_num1_party} mit ${state_num1_percent} Prozent die meisten Zweitstimmen.
+         Danach folgen ${state_overview}."
+  process:
+    pluralize_verb_dependent_on_party: 
+
+biggest_differences:
+  text: "${loser_text} ${winner_text}"
+  process:
+    pluralize_verb_dependent_on_party:
+
+subtitle1:
+  text: "Wahlergebnisse im ${constituency}"
