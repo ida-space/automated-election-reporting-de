@@ -26,17 +26,28 @@ These three components ensure a certain flexibilty. By combining certain article
 
 
 
-## Setup 
+## Getting Started with docker-compose
 
-This code requires ``` python3.9 ```. If it is installed it's easy to setup a virtual environment and install all dependencies by running:
+To quickly get started start ```docker-compose``` with:
+
+```
+docker-compose build
+docker-compose up
+```
+
+A ```./results`` folder is created which contains one article file for each constituency.
+
+
+
+## Local Setup 
+
+For Linux and Windows users there is also an easy way to setup the code within a virtual environment. It only requires ``` python3.9 ``` to be installed. To setup the virtual environment and install all dependencies run:
 
 ```
 ./run install
 ```
 
-
-
-## Generating texts
+### Generating texts
 
 The main script is called *script.py*. It generates an article for each consituency listed in the sample data files which can be found in the */data/sample/* folder.
 Start the script with:
@@ -51,6 +62,31 @@ A possible flag is *--init* or *-i*. It initializes the articles with the preele
 ```
 
 A results folder containing a ```txt``` file for each consituency is created.
+
+
+
+## How to use the code in the real world 
+
+The aim of this repo is to demonstrate a potential way to approach automated election reporting in German. It is easy to adapt the article structure or text modules to fit in a specific context.
+However, to use this code in the "real world", e.g. for election reporting at a state election, the following things have to be added
+
+- A reliable and verified data source, e.g. the data of the corresponding election organizers, as well as a way to put them into the required csv format which is showcased in ```./data/sample/```
+- An article structure that fits the required format for publication, e.g. ```html, xml, md``` or ```txt``` files.
+- A way of importing the generated articles into your Content Management System
+- text is of course only part of the story. Add graphs to your articles to make it more accessible and nicer to read
+
+
+
+And this is how it could look: 
+
+<img src="./data/sample.png" title="sample article" width="800"/>
+
+
+
+More examples for automated election reporting with this script can be found here:
+
+- Constituency level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlkreisergebnis/index.html
+- Municipality level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/gemeindeergebnis/gemeinden-von-a-z-100.html
 
 
 

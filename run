@@ -28,6 +28,7 @@ if [ ! -f "venv/bin/activate" ]; then
 fi
 
 . ./venv/bin/activate || exit 1
+export RES_PATH="./results/"
 
 if [ $CMD = "run" ]; then
     python script.py "$@"

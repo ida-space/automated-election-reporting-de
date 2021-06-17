@@ -19,10 +19,10 @@ def main(init: bool):
     # skip consituencies if needed
     blacklist: List = []
 
-    res_path = './results/'
+    res_path = os.getenv('RES_PATH', '/results/')
     os.makedirs(res_path, exist_ok=True)
 
-    logger.info('script_constituencies.py started')
+    logger.info('script.py started')
     logger.info('Option: init: {}'.format(init))
 
     logger.info('load data')
@@ -140,7 +140,7 @@ def main(init: bool):
     # STORE PROGRESS
     pd.DataFrame(progress).to_csv(progress_path)
 
-    logger.info('script_constituencies.py finished')
+    logger.info('script.py finished')
 
 
 if __name__ == '__main__':
