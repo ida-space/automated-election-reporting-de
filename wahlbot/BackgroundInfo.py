@@ -41,7 +41,7 @@ class BackgroundInfo:
 
     def get_extra_info(self, constituency):
         data = self.extras[self.extras['Wahlkreis'] == constituency]
-        text = self.get_value(data, 'template')
+        text = self.get_value(data, 'text')
         return Info(text)
 
     def get_value(self, data, col):

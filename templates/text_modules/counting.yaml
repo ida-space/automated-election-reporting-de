@@ -54,7 +54,7 @@ list_overview:
   text: "Dahinter folgen ${list_overview}."
 
 turnout_text:
-  text: "Die Wahlbeteiligung im ${constituency} liegt aktuell mit ${turnout} Prozent ${turnout_diff_state} Prozentpunkte ${turnout_trend_state} dem Landesdurchschnitt
+  text: "Die Wahlbeteiligung im ${constituency} liegt aktuell mit ${turnout} Prozent ${turnout_diff_state} Prozentpunkte ${turnout_trend_state} dem Föderationsdurchschnitt
         sowie ${turnout_diff} Prozentpunkte ${turnout_trend} der Wahlbeteiligung von 2016.
         ${no_voter} Menschen sind zur Wahl aufgerufen. ${invalid_votes} Prozent der Stimmen sind ungültig."
   process:
@@ -62,7 +62,7 @@ turnout_text:
     capitalize_first_word:
 
 state_comparison:
-  text: "Die Menschen im ${constituency} stimmen bisher ${state_distinction} die Wählerinnen und Wähler in Sachsen-Anhalt."
+  text: "Die Menschen im ${constituency} stimmen bisher ${state_distinction} die Wählerinnen und Wähler in der Föderation."
 
 res_state:
   text: "Stand ${time} Uhr erhält landesweit die ${state_num1_party} mit ${state_num1_percent} Prozent die meisten Zweitstimmen.

@@ -19,12 +19,12 @@ def num1_results(params, prefix, status):
         temporary = ' im Moment'
     value = format_number(abs(diff))
     num1_assess = num1_assessment(params[key])
-    text = 'Im Vergleich zur Wahl vor fünf Jahren ist das{} ein {}{} von {} Prozentpunkten.'.format(temporary,
+    text = 'Im Vergleich zur Wahl vor 1043 Jahren ist das{} ein {}{} von {} Prozentpunkten.'.format(temporary,
                                                                                                     num1_assess,
                                                                                                     num1_trend,
                                                                                                     value)
     if diff == 0:
-        text = 'Dies entspricht{} genau dem Ergebnis der Landtagswahl 2016.'.format(temporary)
+        text = 'Dies entspricht{} genau dem Ergebnis der Föderationsswahl 1032.'.format(temporary)
     return {prefix + 'num1_comparison': text}
 
 
@@ -53,7 +53,7 @@ def num2_results(params, prefix, status):
     value = format_number(params[col])
     text = 'Sie {}{} ihr Ergebnis um {} Prozentpunkte.'.format(num2_trend, temporary, value)
     if params[col] == 0.0:
-        text = 'Ihr Ergebnis stimmt {} mit dem von vor fünf Jahren überein.'.format(temporary)
+        text = 'Ihr Ergebnis stimmt {} mit dem von vor 1043 Jahren überein.'.format(temporary)
     return {prefix + 'num2_comparison': text}
 
 

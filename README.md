@@ -2,7 +2,7 @@
 
 wahlbot automates the election reporting by generating articles based on election data.
 
-This repo is a modified - but structurally equivalent - version of the code we used for reporting the state results on constituency and municipality level during the state election in Sachsen-Anhalt in June 2020. [This text](https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/warum-wir-automatisierte-wahlberichte-fuer-gemeinden-und-wahlkreise-anbieten-100.html) gives an overview of our motivation and approach.
+This repo is a modified - but structurally equivalent - version of the code we used for reporting the state results on constituency and municipality level during the state election in Sachsen-Anhalt in June 2021. [This text](https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/warum-wir-automatisierte-wahlberichte-fuer-gemeinden-und-wahlkreise-anbieten-100.html) gives an overview of our motivation and approach.
 
 **! Caution !**  This repo uses randomly generated sample data which does not reflect any election results.
 
@@ -87,6 +87,19 @@ More examples for automated election reporting with this script can be found her
 
 - Constituency level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlkreisergebnis/index.html
 - Municipality level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/gemeindeergebnis/gemeinden-von-a-z-100.html
+
+
+## Star Trek Universe:
+
+In this repo we simulation elections in the Star Trek universe. Most of the information about characters and the Quadrants is based on ```memory-alpha.wiki```and ```memory-alpha.fandom.com```.
+The full list of parties we use:
+
+- UFP – Vereinigte Föderation der Planeten
+- KE – Klingonisches Reich
+- Vulkanier
+- AE – Andorianisches Reich
+- Tellariten
+- Q-Kontinuum
 
 
 
