@@ -29,7 +29,7 @@ def main(init: bool):
 
     # Simulated data at different states
     data = pd.read_csv('./data/sample/counting.csv', sep=',', encoding='utf8')
-    #data = pd.read_csv('./data/sample/final.csv', sep=',', encoding='latin')
+    # data = pd.read_csv('./data/sample/final.csv', sep=',', encoding='latin')
 
     # Load column names
     cfg = load_yaml('./cfg.yaml')

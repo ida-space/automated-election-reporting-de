@@ -47,6 +47,8 @@ For Linux and Windows users there is also an easy way to setup the code within a
 ./run install
 ```
 
+
+
 ### Generating texts
 
 The main script is called *script.py*. It generates an article for each consituency listed in the sample data files which can be found in the */data/sample/* folder.
@@ -62,6 +64,11 @@ A possible flag is *--init* or *-i*. It initializes the articles with the preele
 ```
 
 A results folder containing a ```txt``` file for each consituency is created.
+
+
+### Testing
+
+For local testing use: ```./run test```
 
 
 
@@ -87,6 +94,7 @@ More examples for automated election reporting with this script can be found her
 
 - Constituency level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlkreisergebnis/index.html
 - Municipality level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/gemeindeergebnis/gemeinden-von-a-z-100.html
+
 
 
 ## Star Trek Universe:
