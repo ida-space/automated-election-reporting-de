@@ -1,10 +1,14 @@
-# wahlbot
+# automated-election-reporting-de
 
-wahlbot automates the election reporting by generating articles based on election data.
+automated-election-reporting-de automates the election reporting by generating articles based on election data.
+
+____
 
 This repo is a modified - but structurally equivalent - version of the code we used for reporting the state results on constituency and municipality level during the state election in Sachsen-Anhalt in June 2021. [This text](https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/warum-wir-automatisierte-wahlberichte-fuer-gemeinden-und-wahlkreise-anbieten-100.html) gives an overview of our motivation and approach.
 
 **! Caution !**  This repo uses randomly generated sample data which does not reflect any election results.
+
+To generate more general examples from the local election results our direct candidates are taken from the Star Trek universe. Most of the information about characters and the Quadrants is based on ```memory-alpha.wiki```and ```memory-alpha.fandom.com```.
 
 The final articles are in German and some grammar rules are highly adapted to the election context.
 
@@ -41,7 +45,7 @@ A ```./results`` folder is created which contains one article file for each cons
 
 ## Local Setup 
 
-For Linux and Windows users there is also an easy way to setup the code within a virtual environment. It only requires ``` python3.9 ``` to be installed. To setup the virtual environment and install all dependencies run:
+For Linux and Mac users there is also an easy way to setup the code within a virtual environment. It only requires ``` python3.9 ``` to be installed. To setup the virtual environment and install all dependencies run:
 
 ```
 ./run install
@@ -51,8 +55,7 @@ For Linux and Windows users there is also an easy way to setup the code within a
 
 ### Generating texts
 
-The main script is called *script.py*. It generates an article for each consituency listed in the sample data files which can be found in the */data/sample/* folder.
-Start the script with:
+The main script is called *script.py*. It generates an article for each consituency listed in the sample data files which can be found in the */data/sample/* folder. Start the script with:
 
 ```
 ./run run
@@ -75,12 +78,12 @@ For local testing use: ```./run test```
 ## How to use the code in the real world 
 
 The aim of this repo is to demonstrate a potential way to approach automated election reporting in German. It is easy to adapt the article structure or text modules to fit in a specific context.
-However, to use this code in the "real world", e.g. for election reporting at a state election, the following things have to be added
+However, to use this code in the "real world", e.g. for election reporting at a state election, the following things have to be added:
 
 - A reliable and verified data source, e.g. the data of the corresponding election organizers, as well as a way to put them into the required csv format which is showcased in ```./data/sample/```
 - An article structure that fits the required format for publication, e.g. ```html, xml, md``` or ```txt``` files.
-- A way of importing the generated articles into your Content Management System
-- text is of course only part of the story. Add graphs to your articles to make it more accessible and nicer to read
+- A way of importing the generated articles into your Content Management System.
+- Text is of course only part of the story. Add graphs to your articles to make it more accessible and nicer to read.
 
 
 
@@ -95,19 +98,7 @@ More examples for automated election reporting with this script can be found her
 - Constituency level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlkreisergebnis/index.html
 - Municipality level: https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/gemeindeergebnis/gemeinden-von-a-z-100.html
 
-
-
-## Star Trek Universe:
-
-In this repo we simulation elections in the Star Trek universe. Most of the information about characters and the Quadrants is based on ```memory-alpha.wiki```and ```memory-alpha.fandom.com```.
-The full list of parties we use:
-
-- UFP – Vereinigte Föderation der Planeten
-- KE – Klingonisches Reich
-- Vulkanier
-- AE – Andorianisches Reich
-- Tellariten
-- Q-Kontinuum
+It might be that after a certain period of time the linked articles are not available any more due to the German Interstate Broadcasting Treaty.
 
 
 
@@ -139,11 +130,11 @@ The full list of parties we use:
    9. Based on the status the respective article structure, e.g. ```article.txt``` or ```preelection.txt``` in ```./src/templates/``` and text modules, e.g. ```counting.yaml, final.yaml``` in ```./src/templates/text_modules/``` are loaded
    10. For each text module the corresponding apply the specified postprocessing steps. This could be:
       - gender: switch the gender of a sentence
-        e.g. ```XY, Direktkandidat der Linken --> XY, Direktkandidatin der Linken```
+        e.g. ```XY, Direktkandidat der Föderation --> XY, Direktkandidatin der Föderation```
       - pluralize party name
-        e.g. ```Die Grüne führen --> Die Grünen führen```
+        e.g. ```Die Q führen --> Die Qs führen```
       - pluralize verb dependen on party
-        e.g. ```Linke kommt auf Platz 2 --> Linke kommen auf Platz 2```
+        e.g. ```Tellariten kommt auf Platz 2 --> Tellariten kommen auf Platz 2```
       - singularize word after 1
         e.g. ```ein Verlust von einen Prozentpunkte --> ein Verlust von einem Prozentpunkt```
 
@@ -154,7 +145,19 @@ The full list of parties we use:
 
 
 
+___
 
 
 
+## Team 
+
+- Redaktion: Martin Paul, Luca Deutschländer, Thomas Vorreyer, Manuel Mohr, Frank Rugullis
+
+- Umsetzung: Natalie Widmann, Jan Sledz, Mike Czekalla, Uwe Kunzelmann, Karl Liebich
+
+  
+
+[Impressum Mitteldeutscher Rundfunk](https://www.mdr.de/impressum/index.html)
+
+[Impressum ida](https://www.ida.me/impressum/)
 
