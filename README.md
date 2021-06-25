@@ -39,7 +39,7 @@ docker-compose build
 docker-compose up
 ```
 
-A ```./results`` folder is created which contains one article file for each constituency.
+A ```./results``` folder is created which contains one article file for each constituency.
 
 
 
