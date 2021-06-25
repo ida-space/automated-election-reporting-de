@@ -73,7 +73,7 @@ def main(init: bool):
         logger.info(constituency)
         data_constituency = data[data[cfg['CONSTITUENCY']] == constituency]
 
-        if data_constituency[cfg['PERCENT']].isnull().all():
+        if not init and data_constituency[cfg['PERCENT']].isnull().all():
             counts['no_data'] = counts['no_data'] + 1
             logger.info('data is empty - skip processing\n')
             continue
@@ -87,6 +87,7 @@ def main(init: bool):
             logger.info('progress: {}/{} ({})'.format(progress[constituency],
                                                       target[constituency],
                                                       prev_progress[constituency]))
+            data.fillna(0, inplace=True)
         else:
             count_status = data_constituency[cfg['STATUS']].values[0]
             if count_status == 'Vorläufiges Ergebnis':
