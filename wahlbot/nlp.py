@@ -56,7 +56,8 @@ def capitalize_first_word(text):
 
 
 def pluralize_verb_dependent_on_party(blob, parties: List[str] =
-                                      ['Vulkanier', 'Tellariten', 'Grüne', 'Freie Wähler', 'Linke']):
+                                      ['Vulkanier', 'Andorianer', 'Klingonen', 'Tellariten',
+                                      'Grüne', 'Freie Wähler', 'Linke']):
     if any(party in blob for party in parties):
         # pluralize all verbs in the sentence
         for word, tag in blob.tags:
@@ -84,6 +85,8 @@ def get_previous_word(text, target):
 def pluralize_party(text, party=None):
     '''pluralizes the party name'''
     if party:
+        if party == 'Q':
+            text = text.replace('Q', 'Qs')
         if party == 'Grüne':
             text = text.replace('Grüne', 'Grünen')
         if party == 'Freie Wähler':
