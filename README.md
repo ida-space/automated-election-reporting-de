@@ -4,7 +4,7 @@ automated-election-reporting-de automates the election reporting by generating a
 
 ____
 
-This repo is a modified - but structurally equivalent - version of the code we used for reporting the state results on constituency and municipality level during the state election in Sachsen-Anhalt in June 2021. [This text](https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/warum-wir-automatisierte-wahlberichte-fuer-gemeinden-und-wahlkreise-anbieten-100.html) gives an overview of our motivation and approach.
+This repo is a reduced and abstract version of the code we used for reporting the state results on constituency and municipality level during the state election in Sachsen-Anhalt in June 2021. The aim is to document our methods and approach. Additionaly, [this text](https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/warum-wir-automatisierte-wahlberichte-fuer-gemeinden-und-wahlkreise-anbieten-100.html) provides more information regarding our motivation.
 
 **! Caution !**  This repo uses randomly generated sample data which does not reflect any election results.
 
